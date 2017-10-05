@@ -4,21 +4,16 @@
 */
 //template
 ?>
-<section class="home-banner">
-    <?php // always start your WP loop ?>
-    <?php while (have_posts()) : ?>
-        <?php the_post(); ?>
-        <?php // can use this for my banner image ?>
-        <?php //the featured image attached to all posts / pages are rendered using usnt the post_thumbail ?>
-        <?php the_post_thumbnail(); ?>
-        <?php //the content in the WYSIWYG Editor ?>
-        <?php the_content(); ?>
-        <h1 class="my_Name">Kevin Lopez</h1>
-        <h2 class="front_End_Text">Front-end web developer</h2>
-        <input class="look_At_Work_Btn" type="button" value="Have a look at my work.">
-        <i class="fa fa-arrow-down fa-3x"  aria-hidden="true"></i>
+
+<?php if (have_posts()): ?>
+    <?php while (have_posts()) : the_post(); ?>
+        <?php get_template_part("templates/components/banner"); ?>
+        <?php get_template_part("templates/components/projects"); ?>
+        <?php get_template_part("templates/components/skills"); ?>
+        <?php get_template_part("templates/components/contact"); ?>
     <?php endwhile; ?>
-</section>
+<?php endif; ?>
+
 
 <?php 
 //Instantiate WordPress Query Object for Projects
