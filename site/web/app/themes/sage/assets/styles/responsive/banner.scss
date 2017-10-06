@@ -1,0 +1,70 @@
+@media only screen and (min-width: 375px) and (max-width: 1023px) {
+    
+    .my_Name{
+        color: #fff;
+        font-size: 2.4em;
+        bottom: 73%;
+        right: 0px;
+        left: 94px;
+    }
+
+    img{
+        position: relative;
+        height: 386px;
+        width: 111%;
+        right: 25px;
+    }
+    .navbar{
+        float: right;
+        font-size: 1.1em;
+        position: absolute;
+        top: 11px;
+        right: -7px;
+        z-index: 1;
+        font-family: lato,sans-serif;
+    }
+
+    .navbar li a{
+        color: #fff;
+        text-decoration: none;
+        margin: 0px 21px 0 0;
+    }
+
+    .logo{
+        height: 35px;
+        width: 35px;
+        bottom: 371px;
+        left: 13px;
+    }
+
+    .front_End_Text{
+        font-size: 1.5em;
+        top: 179px;
+        left: 18.5%;
+    }
+
+    .look_At_Work_Btn{
+        position: absolute;
+        background: transparent;
+        font-size: 1.1em;
+        bottom: 64%;
+        left: 25%;
+        border-radius: 25px;
+        border: 1px solid #fff;
+        color: #fff;
+        font-family: lato,sans-serif;
+        font-weight: 100;
+        padding: 1.5%;
+    }
+
+    .fa-arrow-down {
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        bottom: 53%;
+        left: 47%;
+        font-weight: lighter;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+    }
+  }
